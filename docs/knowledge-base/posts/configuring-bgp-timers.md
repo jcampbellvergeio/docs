@@ -2,7 +2,9 @@
 title: Adjusting BGP Timers
 slug: adjusting-bgp-timers
 description: Learn how to adjust BGP timers
-draft: true
+draft: false
+date: 2024-11-13T14:45:26.462Z
+author: VergeOS Documentation Team
 tags:
   - network
   - networking
@@ -11,6 +13,7 @@ categories:
   - Network
 dateCreated: 2024-11-13T14:45:26.462Z
 ---
+
 # Configuring BGP Hold Down Timers
 
  BGP (Border Gateway Protocol) hold timers are critical for maintaining stable BGP sessions between routers. This document will guide you through configuring the BGP hold down timers to 5 seconds for the keepalive interval and 15 seconds for the hold time.
