@@ -3,7 +3,7 @@ title: Adjusting BGP Timers
 slug: adjusting-bgp-timers
 description: Learn how to adjust BGP timers
 draft: false
-date: 2024-11-13T14:45:26.462Z
+date: 2024-11-13T14:45:26.463Z
 author: VergeOS Documentation Team
 tags:
   - network
@@ -11,7 +11,7 @@ tags:
   - bgp
 categories:
   - Network
-dateCreated: 2024-11-13T14:45:26.462Z
+dateCreated: 2024-11-13T14:45:26.463Z
 ---
 
 # Configuring BGP Hold Down Timers
