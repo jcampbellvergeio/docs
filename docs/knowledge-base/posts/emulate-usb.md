@@ -34,7 +34,7 @@ Before creating an emulated USB device, ensure your VM meets these requirements:
 
 - VM settings:
   - **Allow Hotplug** must be enabled
-  - **Machine Type** must be **9.0** or higher
+  - **Machine Type** must be **Q35 + ICH9,2009, 9.0** or higher
 - VirtIO drivers installed in the guest OS
 
 !!! warning "Machine Type Changes"
