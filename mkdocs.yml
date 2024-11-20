@@ -146,6 +146,7 @@ nav:
       - Cloud Providers: reference-architecture/csp.md
       - Life / Data Science: reference-architecture/data-science.md
       - Homelab: reference-architecture/homelab.md
+      - Fibre Channel: reference-architecture/fibre-channel-ra.md
   - Knowledge Base:
     - knowledge-base/index.md
   - Product Guide:
@@ -281,6 +282,7 @@ nav:
        - Architecture: product-guide/vsan/architecture.md  # Added from PR
        - Storage Tiers: product-guide/vsan/storage-tiers.md
        - Preferred Tier: product-guide/preferredtiers.md
+       - Fibre Channel: product-guide/vsan/fibre-channel-pg.md
        - Removing ISO Files with References: product-guide/removing-isorefs.md
     - Device Passthrough:
       - Overview: product-guide/devpass-overview.md
