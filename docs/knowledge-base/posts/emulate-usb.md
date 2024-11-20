@@ -4,7 +4,7 @@ slug: emulate-usb
 description: Instructions for creating/attaching an emulated USB device to a VM
 author: VergeOS Documentation Team
 draft: false
-date: 2024-11-19T15:19:47.449Z
+date: 2024-11-20T15:19:47.449Z
 tags:
   - USB
   - device
@@ -59,6 +59,7 @@ Before creating an emulated USB device, ensure your VM meets these requirements:
    - Set **Media** to either **Disk** or **Clone Disk**
    - Set **Interface** to **USB**
    - Optional: Enter a custom name (system will auto-generate if blank)
+   - Optional: Add a Serial Number (explained below)
    - If using Clone Disk, select the appropriate *.raw file
 
 4. **Enable Device**
@@ -67,6 +68,28 @@ Before creating an emulated USB device, ensure your VM meets these requirements:
    - Click **HotPlug** in the left menu
 
 For additional drive configuration options, see: [VM Drives](/product-guide/VMdrives)
+
+## USB Device Identification Details
+
+Virtual USB drives in VergeOS use the following default identification parameters:
+
+- **Vendor ID:** `46F4` (QEMU)
+- **Device ID:** `0001` (QEMU_HARDDISK)
+
+The **GUID** for each virtual USB drive begins with the prefix:  
+`46F4-0001-0000-`
+
+### Adding a Serial Number
+You can enhance the identification of a virtual USB drive by specifying a **Serial Number** during configuration. When a Serial Number is added, it is appended to the default GUID.
+
+**Example:**  
+If the Serial Number is set to `1A4D9FA3F407`, the resulting GUID will be:  
+`46F4-0001-0000-1A4D9FA3F407`
+
+Adding a Serial Number can help uniquely identify USB drives, especially when multiple devices are attached to the same VM.
+
+!!! tip "Where to Add the Serial Number"
+    The Serial Number field is available when configuring the new USB device in the **Drives** section of the UI.
 
 ## Troubleshooting
 
@@ -83,5 +106,5 @@ For additional drive configuration options, see: [VM Drives](/product-guide/VMdr
 ---
 
 !!! note "Document Information"
-    - Last Updated: 2024-11-19
+    - Last Updated: 2024-11-20
     - VergeOS Version: 4.13
